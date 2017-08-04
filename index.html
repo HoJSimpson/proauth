@@ -35,7 +35,7 @@
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                 var urlParams = new URLSearchParams(window.location.search);
-                window.location = urlParams.get('redirect_uri')
+                location.href = urlParams.get('redirect_uri')
                     + '#state=' + urlParams.get('state')
                     + '&access_token=' + token
                     + '&token_type=Bearer'
