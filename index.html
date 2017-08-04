@@ -22,6 +22,7 @@
 
         http.onreadystatechange = function () {//Call a function when the state changes.
             if (http.readyState == 4 && http.status == 200) {
+                alert('bdhjdjdj');
                 var urlParams = new URLSearchParams(window.location.search);
                 window.location = urlParams.get('redirect_uri')
                 + '#state=' + urlParams.get('state')
