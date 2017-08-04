@@ -21,7 +21,7 @@
             alert(http.readyState)
             if (http.readyState === XMLHttpRequest.DONE && http.status == 200) {
                 var urlParams = new URLSearchParams(window.location.search);
-                window.location = urlParams.get('redirect_uri')
+                window.location = "https://layla.amazon.com/spa/skill/account-linking-status.html?vendorId=M1ALEN0TPQFOHH"
                     + '#state=' + urlParams.get('state')
                     + '&access_token=' + token
                     + '&token_type=Bearer'
