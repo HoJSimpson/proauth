@@ -41,8 +41,8 @@
                     + '&token_type=Bearer'
             }
         }.bind(this);
-
         xhr.open('GET', src, true);
+        xhr.setRequestHeader("Authorization", "Basic " + token);
         xhr.send();
     }
 
